@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/stylecontato.css">
+    <link rel="stylesheet" href="/static/normalize.css">
+    <title>Contato</title>
+</head>
+
+<body>
+    <header>
+        <div class="linha"></div>
+        <img src="{{ url_for('static', filename='imagens/logo.png') }}" alt="logo" style="position: absolute; top: 3rem; left: 5rem;">
+
+        <div class="menu">
+            <ul>
+                <li>
+                    <a href="Index.html">
+                        Home
+                    </a>
+                </li>
+
+                <li>
+                    <a href="Quem somos.html">
+                        Quem Somos
+                    </a>
+                </li>
+
+                <li>
+                    <a href="Contato.html">
+                        Contato
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <div class="conteudo">
+           <h1>{{Contato}}</h1>
+            <h2><b>Entre em contato</b></h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+            <br>
+            <form>
+                <label for="email" >Seu email:</label>
+                <input type="email" id="campo">
+                <label for="assunto">Assunto:</label>
+                <input type="text" id="campo">
+                <label for="email">Descrição:</label>
+                <input type="text" id="campo2">
+    
+                <button><span>Enviar</span></button>
+    
+            </form>
+    
+          
+        </div>
+    </main>
+
+    <footer>  <b style="position: absolute; top: 95%; left: 45%;">Todos os direitos reservados</b></footer>
+</body>
+
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./static/style.css">
+    <link rel="stylesheet" href="./static/normalize.css">
+    <title>UNES</title>
+</head>
+
+<body>
+    
+    <header>
+        <div class="linha"></div>
+        <img src="{{ url_for('static', filename='imagens/logo.png') }}" alt="logo" style="position: absolute; top: 3rem; left: 5rem;">
+
+        <div class="menu">
+            <ul>
+                <li>
+                    <a href="Index.html">
+                        Home
+                    </a>
+                </li>
+
+                <li>
+                    <a href="Quem somos.html">
+                        Quem Somos
+                    </a>
+                </li>
+
+                <li>
+                    <a href="Contato.html">
+                        Contato
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    
+    <main>
+       
+        <div class="banner">
+            <img src="{{ url_for('static', filename='imagens/capa.png') }}" alt="capa">
+        </div>
+        <div class="conteudo">
+            <br>
+            <br>
+            <br>
+
+        <p style="font-size: 29px; font-weight: bold;">Sobre a universidade</p>
+        <br>
+        <p>{{sobre}}</p>
+            
+        <p>, velit blanditiis, explicabo cupiditate? Provident fugit
+                dolore ratione cupiditate omnis.</p>
+            <P>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi delectus debitis rem error fugiat! Quis
+            eius ipsum ex nihil doloremque? Inventore neque</P>
+            <p>repellendus perferendis eveniet quas tempore fuga aspernatur
+                quibusdam.</p> 
+            </P>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui dignissimos fugit autem ea, voluptate eveniet
+            possimus modi aliquid reiciendis corrupti dolore </p>
+        <p>saepe ratione quo consequatur, enim earum sint accusamus animi!
+        </p>
+        </p>
+        <br>
+        <br>
+        <br>
+       </div>
+    </main>
+    <footer>
+        <b style="position: absolute; top: 90%;">Todos os direitos reservados</b>
+    </footer>
+
+</body>
+
+</html>
